@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+
+:root{
+  --cor-primaria: black;
+  --cor-secundaria: white;
+  --cor-terciaria: rgb(73, 139, 226);
+}
+
+/* Fonte personalizada */
+.krona-one-regular {
+  font-family: "Krona One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Krona One", sans-serif;
+}
+
+
+/* Corpo da página */
+body {
+  min-height: 100vh;
+  align-items: center;
+  overflow-y: auto;
+  box-sizing: border-box;
+  background-color:var(--cor-primaria);
+  color: var(--cor-secundaria);
+  font-size: 1.25rem;
+  
+}
+
+.navegacao{
+  padding: 2% 0% 0% 7%;
+}
+
+.navegacao__link{
+  display: flex;
+  gap: 80px;
+}
+
+/* Navegação do topo */
+.navegacao__links__menu{
+  font-family: "Krona One", sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  color: var(--cor-terciaria)
+}
+
+/* Container principal: texto + imagem */
+.apresentacao {
+  width: 80vw;
+  padding: 7%;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+/* Coluna de texto */
+.apresentacao__conteudo {
+  width: 615px;
+}
+
+.apresentacao__conteudo__titulo {
+  font-size: 3.75rem;
+  margin-bottom: 7px;
+}
+
+.apresentacao__conteudo__titulo__paragrafo {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* Destaque azul no texto */
+.destaque {
+  font-weight: bold;
+  color: var(--cor-terciaria);
+}
+
+/* Container dos botões */
+.apresentacao__links {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  align-items: flex-start;
+}
+
+/* Botões */
+#botaoLinkedIn:hover,#botaoGithub:hover {
+  font-size: 1.1rem;
+  background-color: var(--cor-secundaria);
+  color: var(--cor-terciaria);
+  transition: all 0.3s ease;
+}
+
+.apresentacao__links__link {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  background-color: var(--cor-primaria);
+  border: 2px solid var(--cor-terciaria);
+  min-width: 100px;
+  height: auto;
+  text-align: center;
+  border-radius: 1cm;
+  font-weight: bold;
+  color: var(--cor-secundaria);
+  font-size: 0.8rem;
+  margin-top: 15px;
+  padding: 2px;
+  text-decoration: none;
+}
+
+/* Imagens nos botões */
+.apresentacao__links__link img {
+  height: auto;
+  width: 15px;
+  object-fit: contain;
+  display: inline-block;
+}
+
+/* Imagem com borda */
+.apresentacao__imagem {
+  border-top: 8px solid var(--cor-terciaria);
+  border-right: 8px solid var(--cor-terciaria);
+  display: inline-block;
+}
+
+/* Imagem em si */
+img {
+  width: 600px;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.curriculo {
+  padding-left: 7%; /* substitui margin-left */
+  margin-bottom: 3%; /* espaço entre seções */
+}
+
+.curriculo > h2 {
+  margin-bottom: 8px; /* um pouco mais de espaço abaixo do título */
+}
+
+.curriculo__destaque{
+  color: var(--cor-terciaria);
+}
+
+.curriculo__lista {
+  margin-bottom: 3%; /* mantém o espaço abaixo da lista */
+  padding-left: 3%;
+  
+}
+
+
+
+
+.projeto{
+  padding: 2% 0% 0% 7%;
+  margin-bottom: 80px;
+}
+
+.projeto__h2{
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+}
+
+.destaque__projeto{
+  font-weight: bold;
+  color: var(--cor-terciaria);
+}
+
+h3{
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+
+.projeto__paragrafo{
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.lista {
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+  margin-top: 40px;
+  flex-wrap: wrap; /* garante responsividade */
+}
+
+.lista__imagem {
+  width: 600px;
+  max-width: 100%;
+  height: auto;
+  border: 2px solid var(--cor-terciaria);
+  border-radius: 8px;
+}
+
+.lista__imagem:hover{
+  transform: scale(1.1);
+  transition: all 0.3s ease
+}
+
+.lista__texto {
+  margin-bottom: 22%;
+  max-width: 600px;
+  font-size: 1rem;
+  text-align: justify;
+  line-height: 1.6;
+}
+
+
+footer{
+  padding: 23px;
+  font-weight: 400;
+  color: var(--cor-primaria);
+  background-color: var(--cor-terciaria);
+  text-align: center;
+}
